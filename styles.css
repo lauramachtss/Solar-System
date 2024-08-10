@@ -17,8 +17,8 @@ body {
 
 .sun {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: yellow;
     border-radius: 50%;
     top: 50%;
