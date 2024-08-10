@@ -11,6 +11,7 @@ planets = [
     {"name": "Neptune", "size": 34, "color": "darkblue", "distance": "920px", "duration": "600s"},
 ]
 
+# Gerando o HTML dos planetas com rotação inicial aleatória e anéis para Saturno
 planet_html = ""
 for planet in planets:
     initial_rotation = random.randint(0, 360)
@@ -41,7 +42,9 @@ for planet in planets:
             <span class="planet-name">{planet['name']}</span>
         </div>
         '''
+
+# Salvando o código HTML gerado
 with open("planets.html", "w") as file:
     file.write(planet_html)
 
-print("funcionou")
+print("HTML dos planetas gerado com sucesso!")
